@@ -1,0 +1,2586 @@
+<?xml version="1.0"?>
+
+<!--
+
+Copyright 2025 Salvatore F Pileggi
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#"
+     xml:base="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:AI-Ethics_Ontology="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#method -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#method"/>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#reference -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#reference"/>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#shortDescription -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#shortDescription"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#application -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#application">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#scenario"/>
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#useCase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Application"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#dimension -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#dimension">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_Dimension"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#example -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#example">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Example"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#fundamentalRight -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#fundamentalRight">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#keyword -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#keyword">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#principle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#principle">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#relevantKeyword -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#relevantKeyword">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#keyword"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <method>Generated by Microsoft Copilot (https://copilot.microsoft.com/) by using the following prompt:
+
+Return the most relevant keywords in the text &quot; ... &quot;</method>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#requirement -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#requirement">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Requirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#scenario -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#scenario">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#useCase"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Scenario"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#useCase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#useCase">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UseCase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_Dimension -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_Dimension">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Framework"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Application -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Application">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Scenario"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UseCase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalDimension_keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalDimension_keyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Example -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Example"/>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Framework">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Requirement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Requirement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Requirement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Scenario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Scenario">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UseCase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SustainableDevelopment_keyword -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SustainableDevelopment_keyword">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UseCase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UseCase"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>AI systems</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AU_AI_Ethics_Principles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AU_AI_Ethics_Principles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Framework"/>
+        <dimension rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Ethical_AI"/>
+        <dimension rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Robust_AI"/>
+        <principle rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accountability"/>
+        <principle rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Contestability"/>
+        <principle rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Fairness_AU"/>
+        <principle rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Human-centred_Values"/>
+        <principle rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanSocietalEnvironmental_Wellbeing"/>
+        <principle rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Privacy_Protection_Security"/>
+        <principle rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Reliability_Safety"/>
+        <principle rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Transparency_Explainability"/>
+        <reference>Australia’s AI Ethics Principles - https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-principles/australias-ai-ethics-principles
+
+Accessed: 22 April 2025</reference>
+        <rdfs:label>Australia’s AI Ethics Principles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AbuseRisk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AbuseRisk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdfs:label>Abuse risks</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Access2Data -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Access2Data">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Access to data</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accessibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accessibility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AccessibleMechanism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AccessibleMechanism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Accessible mechanisms</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AccidentInvestigator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AccidentInvestigator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Accident investigator</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accountability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accountability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accountability_req"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Design_Development_Deployment_Operation"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ExternalReview"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanControl"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanOversight"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Identifiable_Decision-maker"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndependentOversight"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#LegalPrinciple"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Lifecycle"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Mechanism"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Responsibility"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#accountability"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#transparency"/>
+        <reference>Australia’s AI Ethics Principles - https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-principles/australias-ai-ethics-principles
+
+Accessed: 22 April 2025</reference>
+        <shortDescription>People responsible for the different phases of the AI system lifecycle should be identifiable and accountable for the outcomes of the AI systems, and human oversight of AI systems should be enabled.</shortDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accountability_req -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accountability_req">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Requirement"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Auditability"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MinimisationReporting_NegativeImpact"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Redress"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Tradeoff"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <shortDescription>Including auditability, minimisation and reporting of negative impact, trade-offs and redress.</shortDescription>
+        <rdfs:label>Accountability</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accuracy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accuracy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accurate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accurate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AdversarialAttack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AdversarialAttack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdfs:label>Adversarial attacks</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AdverselyAffect -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AdverselyAffect">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Adversely affect</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Age_Disability_Race_Sex_GenderIdentity_SexualOrientation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Age_Disability_Race_Sex_GenderIdentity_SexualOrientation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Age, disability, race, sex, gender identity, sexual orientation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AlgorithmInformation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AlgorithmInformation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Algorithm information</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Anonymisation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Anonymisation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Anti-discriminationLaws -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Anti-discriminationLaws">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Anti-discrimination laws</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Asymmetry_PowerInformation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Asymmetry_PowerInformation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdfs:label>Asymmetries of power or information</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Auditability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Auditability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Augment_Complement_Empower -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Augment_Complement_Empower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Augment, complement, empower</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Augmentation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Augmentation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AutonomyIndividuals -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AutonomyIndividuals">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Autonomy of individuals</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#BeneficialOutcomes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#BeneficialOutcomes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Beneficial outcomes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Bias -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Bias">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#BlackBox_Algorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#BlackBox_Algorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Black box algorithms</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#BusinessPurposes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#BusinessPurposes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Business purposes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Business_Consumer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Business_Consumer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Businesses and consumers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Certification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Certification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ChallengeOutcome -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ChallengeOutcome">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Challenge outcomes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#CitizenRight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#CitizenRight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <rdfs:label>Citizens’ rights</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#CognitiveSocialCultural_Skills -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#CognitiveSocialCultural_Skills">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Cognitive, social, cultural skills</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#CognitiveSocialCultural_skill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#CognitiveSocialCultural_skill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Cognitive, social, cultural skills</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Communication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Communication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#CompetingInterest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#CompetingInterest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Competing interests</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Consequence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Consequence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Consequences</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Contestability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Contestability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AccessibleMechanism"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AlgorithmInformation"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ChallengeOutcome"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanJudgment"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Inference"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Oversight"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#PublicTrust"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Redress4Harm"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Significantimpact"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#VulnerablePerson"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#contestability"/>
+        <reference>Australia’s AI Ethics Principles - https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-principles/australias-ai-ethics-principles
+
+Accessed: 22 April 2025</reference>
+        <shortDescription>When an AI system significantly impacts a person, community, group or environment, there should be a timely process to allow people to challenge the use or outcomes of the AI system.</shortDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ContextDependence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ContextDependence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Context dependence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Creator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Creator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DataGovernance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DataGovernance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Data governance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DataIntegrity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DataIntegrity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Data integrity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DataProtection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DataProtection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Data protection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DataQuality -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DataQuality">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Data quality</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Decision-making -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Decision-making">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Democracy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Democracy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DemocraticProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DemocraticProcess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Democratic process</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DemocraticSociety -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DemocraticSociety">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Democratic society</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Design_Development_Deployment_Operation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Design_Development_Deployment_Operation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Design, development, deployment, operation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_Deployment_Use -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_Deployment_Use">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Development, deployment, use</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Discrimination -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Discrimination">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Diversity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Diversity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Diversity_Non-discrimination_Fairness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Diversity_Non-discrimination_Fairness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Requirement"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accessibility"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Bias"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#StakeholderParticipation"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UniversalDesign"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <shortDescription>Including the avoidance of unfair bias, accessibility and universal design, and stakeholder participation</shortDescription>
+        <rdfs:label>Diversity, non-discrimination and fairness</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Education -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Education">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Efficiency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Efficiency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Employers_Employees -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Employers_Employees">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Employers and employees</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Empowerment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Empowerment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalFriendliness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalFriendliness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Environmental friendliness</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalWellbeing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalWellbeing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Environmental wellbeing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EqualOpportunity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EqualOpportunity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Equality_Non-discrimination_Solidarity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Equality_Non-discrimination_Solidarity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <rdfs:label>Equality, non-discrimination and solidarity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EquitableAccess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EquitableAccess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Equitable access</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Ethical_AI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Ethical_AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_Dimension"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <shortDescription>Ensuring adherence to ethical principles and values</shortDescription>
+        <rdfs:label>Ethical AI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Ethics4TrustwortyAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Ethics4TrustwortyAI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Framework"/>
+        <dimension rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Ethical_AI"/>
+        <dimension rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Lawful_AI"/>
+        <dimension rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Robust_AI"/>
+        <fundamentalRight rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#CitizenRight"/>
+        <fundamentalRight rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Equality_Non-discrimination_Solidarity"/>
+        <fundamentalRight rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FreedomIndividual"/>
+        <fundamentalRight rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Respect4DemocracyJusticeLaw."/>
+        <fundamentalRight rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Respect4HumanDignity"/>
+        <principle rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Explicability"/>
+        <principle rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Fairness_AU"/>
+        <principle rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#PreventionHarm"/>
+        <principle rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Respect4HumanAutonomy"/>
+        <requirement rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accountability_req"/>
+        <requirement rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Diversity_Non-discrimination_Fairness"/>
+        <requirement rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Human_Agency_Oversight"/>
+        <requirement rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Privacy_DataGovernance"/>
+        <requirement rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocietalEnvironmental_Wellbeing"/>
+        <requirement rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#TechnicalRobustness_Safety"/>
+        <requirement rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Transparency"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <rdfs:label>Ethics guidelines for trustworthy AI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Explainability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Explainability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Explicability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Explicability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Auditability"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#BlackBox_Algorithm"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Communication"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Consequence"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ContextDependence"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Explainability"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Traceability"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Trust"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#explicability"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#transparency"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ExternalReview -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ExternalReview">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>External review</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Fairness_AU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Fairness_AU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Fairness_EU"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accessibility"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Age_Disability_Race_Sex_GenderIdentity_SexualOrientation"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Anti-discriminationLaws"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Discrimination"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EquitableAccess"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Inclusion"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocietalInjustice"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#StakeholderConsultation"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UnderrepresentedGroup"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#User-centricDesign"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#fairness"/>
+        <reference>Australia’s AI Ethics Principles - https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-principles/australias-ai-ethics-principles
+
+Accessed: 22 April 2025</reference>
+        <shortDescription>AI systems should be inclusive and accessible, and should not involve or result in unfair discrimination against individuals, communities or groups.</shortDescription>
+        <rdfs:label>Fairness</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Fairness_EU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Fairness_EU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Bias"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#CompetingInterest"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Decision-making"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Discrimination"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Education"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FreedomChoice"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Goods_Services"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ProceduralDimension"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Proportionality"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Redress"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Stigmatisation"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SubstantiveDimension"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Technology"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#accountability"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#explicability"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#fairness"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <rdfs:label>Fairness</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FallBackPlan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FallBackPlan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Fall back plan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Freedom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Freedom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FreedomChoice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FreedomChoice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Freedom of choice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FreedomIndividual -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FreedomIndividual">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <rdfs:label>Freedom of the individual</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FutureGenerations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FutureGenerations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SustainableDevelopment_keyword"/>
+        <rdfs:label>Future generations</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GeneralSafety -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GeneralSafety">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>General safety</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GlobalConcern -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GlobalConcern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SustainableDevelopment_keyword"/>
+        <rdfs:label>Global concern</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Goods_Services -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Goods_Services">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Goods &amp; services</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Government_Citizen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Government_Citizen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Governments and citizens</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Harm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Harm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Human-centredValues -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Human-centredValues">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Human-centred values</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Human-centred_Values -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Human-centred_Values">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Augmentation"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AutonomyIndividuals"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#CognitiveSocialCultural_skill"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DemocraticSociety"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Diversity"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Empowerment"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Human-centredValues"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanRights"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Manipulation"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ProtectingEnvironment"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#RiskConsiderations"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#StakeholderPerspectives"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Surveillance"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#transparency"/>
+        <reference>Australia’s AI Ethics Principles - https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-principles/australias-ai-ethics-principles
+
+Accessed: 22 April 2025</reference>
+        <shortDescription>AI systems should respect human rights, diversity, and the autonomy of individuals.</shortDescription>
+        <rdfs:label>Human-centred Values</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Human-centric_DesignPrinciple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Human-centric_DesignPrinciple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Human-centric design principles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanAgency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanAgency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Human agency</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanAutonomy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanAutonomy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Human autonomy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanChoice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanChoice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Human choice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanControl -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanControl">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Human control</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanDignity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanDignity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Human dignity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanJudgment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanJudgment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Human judgment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanOversight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanOversight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Human oversight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanRights -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanRights">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Human rights</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanSocietalEnvironmental_Wellbeing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanSocietalEnvironmental_Wellbeing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocietalEnvironmental_Wellbeing"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#BeneficialOutcomes"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#BusinessPurposes"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Efficiency"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalWellbeing"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FutureGenerations"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GlobalConcern"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanWellbeing"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Impacts"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualsSocietyEnvironment"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Lifecycle"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Objectives"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Organisation"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialWellbeing"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UN_SDGs"/>
+        <reference>Australia’s AI Ethics Principles - https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-principles/australias-ai-ethics-principles
+
+Accessed: 22 April 2025</reference>
+        <shortDescription>AI systems should benefit individuals, society and the environment.</shortDescription>
+        <rdfs:label>Human, societal and environmental wellbeing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanWellbeing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanWellbeing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Human wellbeing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Human_Agency_Oversight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Human_Agency_Oversight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Requirement"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanAgency"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanOversight"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <shortDescription>Including fundamental rights, human agency and human oversight</shortDescription>
+        <rdfs:label>Human agency and oversight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Identifiable_Decision-maker -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Identifiable_Decision-maker">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Identifiable decision-makers</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Impacts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Impacts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Impacts (positive &amp; negative)</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Inclusion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Inclusion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndependentOversight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndependentOversight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Independent oversight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualsSocietyEnvironment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualsSocietyEnvironment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Individuals, society, environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Inference -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Inference">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Inferences</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#InputData -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#InputData">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Input data</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IntendedPurpose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IntendedPurpose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Intended purpose</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Justification -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Justification">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Lawful_AI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Lawful_AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_Dimension"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <shortDescription>Complying with all applicable laws and regulations</shortDescription>
+        <rdfs:label>Lawful AI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#LegalPrinciple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#LegalPrinciple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Legal principles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#LegalProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#LegalProcess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Lifecycle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Lifecycle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#LivingBeing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#LivingBeing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Living beings</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MaliciousUse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MaliciousUse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdfs:label>Malicious use</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Manipulation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Manipulation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MeaningfulWork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MeaningfulWork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Meaningful work</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Mechanism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Mechanism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Mechanisms</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MentalPhysical_Integrity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MentalPhysical_Integrity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Mental and physical integrity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MinimisationReporting_NegativeImpact -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MinimisationReporting_NegativeImpact">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Minimisation and reporting of negative impact</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MitigationMeasure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MitigationMeasure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Mitigation measures</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Monitoring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Monitoring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#NaturalEnvironment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#NaturalEnvironment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Natural environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Objectives -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Objectives">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Organisation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Organisation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Oversight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Oversight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#PreventionHarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#PreventionHarm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AdverselyAffect"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Asymmetry_PowerInformation"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Business_Consumer"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_Deployment_Use"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Employers_Employees"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Government_Citizen"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Harm"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanDignity"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#LivingBeing"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MaliciousUse"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MentalPhysical_Integrity"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#NaturalEnvironment"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Safe_Secure"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#TechnicallyRobust"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#VulnerablePerson"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <rdfs:label>Prevention of harm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#PrivacyProtection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#PrivacyProtection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Privacy protection</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Privacy_DataGovernance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Privacy_DataGovernance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Requirement"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Access2Data"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DataIntegrity"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DataQuality"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Respect4Privacy"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <shortDescription>Including respect for privacy, quality and integrity of data, and access to data</shortDescription>
+        <rdfs:label>Privacy and data governance</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Privacy_Protection_Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Privacy_Protection_Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AbuseRisk"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AdversarialAttack"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Anonymisation"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DataGovernance"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DataProtection"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MitigationMeasure"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#PrivacyProtection"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Resilience"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Security"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SecurityVulnerabilities"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UnintendedApplication"/>
+        <reference>Australia’s AI Ethics Principles - https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-principles/australias-ai-ethics-principles
+
+Accessed: 22 April 2025</reference>
+        <shortDescription>AI systems should respect and uphold privacy rights and data protection, and ensure the security of data.</shortDescription>
+        <rdfs:label>Privacy protection and security</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ProceduralDimension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ProceduralDimension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Procedural dimension</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Proportionality -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Proportionality">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ProtectingEnvironment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ProtectingEnvironment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Protecting the environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#PublicConfidence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#PublicConfidence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Public confidence</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#PublicTrust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#PublicTrust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Public trust</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Redress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Redress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Redress4Harm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Redress4Harm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Redress for harm</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Regulator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Regulator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Reliability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Reliability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Reliability_Safety -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Reliability_Safety">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accurate"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IntendedPurpose"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Lifecycle"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Monitoring"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Reliability"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Reproducible"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Responsibility"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#RiskManagement"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Robust"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Safety"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SafetyRisk"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Testing"/>
+        <reference>Australia’s AI Ethics Principles - https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-principles/australias-ai-ethics-principles
+
+Accessed: 22 April 2025</reference>
+        <shortDescription>AI systems should reliably operate in accordance with their intended purpose.</shortDescription>
+        <rdfs:label>Reliability and safety</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Reproducibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Reproducibility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Reproducible -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Reproducible">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Resilience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Resilience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Respect4DemocracyJusticeLaw. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Respect4DemocracyJusticeLaw.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <rdfs:label>Respect for democracy, justice and the rule of law</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Respect4HumanAutonomy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Respect4HumanAutonomy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Augment_Complement_Empower"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#CognitiveSocialCultural_Skills"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#DemocraticProcess"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Freedom"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Human-centric_DesignPrinciple"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanAutonomy"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanChoice"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#HumanOversight"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#MeaningfulWork"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Self-determination"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#WorkProcess"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#WorkSphere"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#WorkingEnvironment"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Subordinate_Coerce_Deceive_Manipulate_Condition,_Herd"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <rdfs:label>Respect for human autonomy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Respect4HumanDignity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Respect4HumanDignity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <rdfs:label>Respect for human dignity</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Respect4Privacy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Respect4Privacy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Respect for privacy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Responsibility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Responsibility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ResponsibleDisclosure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ResponsibleDisclosure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Responsible disclosure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#RiskConsiderations -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#RiskConsiderations">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdfs:label>Risk considerations</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#RiskManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#RiskManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdfs:label>Risk management</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Robust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Robust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Robust_AI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Robust_AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_Dimension"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <shortDescription>Both from a technical and social perspective, since, even with good intentions, AI systems can cause unintentional harm</shortDescription>
+        <rdfs:label>Robust AI</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Safe_Secure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Safe_Secure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Safe and secure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Safety -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Safety">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SafetyRisk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SafetyRisk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdfs:label>Safety risks</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Security -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Security">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SecurityVulnerabilities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SecurityVulnerabilities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdfs:label>Security vulnerabilities</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Self-determination -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Self-determination">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Significantimpact -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Significantimpact">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Significant impact</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialImpact -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialImpact">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Social impact</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialWellbeing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialWellbeing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Social wellbeing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocietalEnvironmental_Wellbeing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocietalEnvironmental_Wellbeing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Requirement"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Democracy"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalFriendliness"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialImpact"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Society"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Sustainability"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <shortDescription>Including sustainability and environmental friendliness, social impact, society and democracy</shortDescription>
+        <rdfs:label>Societal and environmental wellbeing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocietalInjustice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocietalInjustice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Societal injustices</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Society -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Society">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Stakeholder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Stakeholder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#StakeholderConsultation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#StakeholderConsultation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Stakeholder consultation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#StakeholderParticipation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#StakeholderParticipation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Stakeholder participation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#StakeholderPerspectives -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#StakeholderPerspectives">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Stakeholder perspectives</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Stigmatisation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Stigmatisation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SubstantiveDimension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SubstantiveDimension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Substantive dimension</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Surveillance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Surveillance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Sustainability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Sustainability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#EnvironmentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SustainableDevelopment_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#TechnicalRobustness_Safety -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#TechnicalRobustness_Safety">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Requirement"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Accuracy"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FallBackPlan"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GeneralSafety"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Reliability"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Reproducibility"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Resilience"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Security"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <shortDescription>Including resilience to attack and security, fall back plan and general safety, accuracy, reliability and reproducibility</shortDescription>
+        <rdfs:label>Technical robustness and safety</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#TechnicallyRobust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#TechnicallyRobust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Technically robust</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Technology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Technology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Testing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Testing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#TimelyDisclosure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#TimelyDisclosure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Timely disclosure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Traceability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Traceability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Tradeoff -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Tradeoff">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Transparency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Transparency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Requirement"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Transparency_Explainability"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Communication"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Explainability"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Traceability"/>
+        <reference>Ethics guidelines for trustworthy AI - https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai
+
+Accessed on: 30 April 2025</reference>
+        <shortDescription>Including traceability, explainability and communication</shortDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Transparency_Explainability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Transparency_Explainability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Principle"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AI_System"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#AccidentInvestigator"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Certification"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Creator"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Decision-making"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Explainability"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#InputData"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Justification"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#LegalProcess"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#PublicConfidence"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Regulator"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#ResponsibleDisclosure"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Stakeholder"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#TimelyDisclosure"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#User"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Validation"/>
+        <relevantKeyword rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#transparency"/>
+        <reference>Australia’s AI Ethics Principles - https://www.industry.gov.au/publications/australias-artificial-intelligence-ethics-principles/australias-ai-ethics-principles
+
+Accessed: 22 April 2025</reference>
+        <shortDescription>There should be transparency and responsible disclosure so people can understand when they are being significantly impacted by AI, and can find out when an AI system is engaging with them.</shortDescription>
+        <rdfs:label>Transparency and explainability</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Trust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Trust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UN_SDGs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UN_SDGs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SustainableDevelopment_keyword"/>
+        <rdfs:label>United Nations Sustainable Development Goals</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UnderrepresentedGroup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UnderrepresentedGroup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#GovernamentalDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Underrepresented groups</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UnintendedApplication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UnintendedApplication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Risk_keyword"/>
+        <rdfs:label>Unintended applications</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UniversalDesign -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#UniversalDesign">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>Universal design</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#User -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#User">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#User-centricDesign -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#User-centricDesign">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdfs:label>User-centric design</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Validation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Validation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Development_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#VulnerablePerson -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#VulnerablePerson">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Vulnerable persons</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#WorkProcess -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#WorkProcess">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Work processes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#WorkSphere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#WorkSphere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Work sphere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#WorkingEnvironment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#WorkingEnvironment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#OrganizationalDimension_keyword"/>
+        <rdfs:label>Working environment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#accountability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#accountability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#contestability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#contestability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#explicability -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#explicability">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#fairness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#fairness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#transparency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#transparency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Characteristic_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Subordinate_Coerce_Deceive_Manipulate_Condition,_Herd -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Subordinate_Coerce_Deceive_Manipulate_Condition,_Herd">
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#IndividualDimension_keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#Keyword"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#SocialDimension_keyword"/>
+        <rdfs:label>Subordinate, coerce, deceive, manipulate, condition, herd</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/AI-Ethics/2025/v1/AI-Ethics_Ontology#FundamentalRight">
+        <rdfs:label>Fundamental rights</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
